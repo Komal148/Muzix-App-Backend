@@ -8,7 +8,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Komal148/config-server-repo
+          force-pull: true
+          uri: https://github.com/Komal148/config-server-repo.git
 
 #Disable security of the Management endpoint
 management:
