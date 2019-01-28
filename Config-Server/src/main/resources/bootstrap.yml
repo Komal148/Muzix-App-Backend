@@ -11,7 +11,14 @@ spring:
           force-pull: true
           uri: https://github.com/Komal148/config-server-repo.git
 
-#Disable security of the Management endpoint
+#  data:
+#     mongodb:
+#        database: sunidhi
+#        port: 27017
+#        host: localhost
+#
+##Disable security of the Management endpoint
 management:
   security:
       enabled: false
+
