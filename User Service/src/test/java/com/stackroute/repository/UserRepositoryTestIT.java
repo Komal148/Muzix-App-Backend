@@ -16,7 +16,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @DataMongoTest
-public class UserRepositoryTest {
+public class UserRepositoryTestIT {
 
     @Autowired
     private UserRepository userRepository;
