@@ -1,11 +1,33 @@
 server:
-  port: 8082
+  port: 8082  #default port where the service will be started
 
 spring:
   application:
-    name: userService
+    name: user-service
   data:
     mongodb:
       database: sunidhi
       port: 27017
       host: localhost
+
+
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+
+management:
+  security:
+    enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc.
+
+logging:
+  level:
+    com.example.howtodoinjava: DEBUG
