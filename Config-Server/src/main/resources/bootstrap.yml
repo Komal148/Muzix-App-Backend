@@ -10,6 +10,8 @@ spring:
         git:
           force-pull: true
           uri: ${CONFIG_SERVER_URL:https://github.com/Komal148/config-server-repo.git}
+
+
   application:
     name: config-server
 
