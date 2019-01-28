@@ -1,14 +1,17 @@
-server:
-  port: 8082  #default port where the service will be started
+#server:
+#  port: 8082  #default port where the service will be started
 
 spring:
   application:
     name: user-service
-  data:
-    mongodb:
-      database: sunidhi
-      port: 27017
-      host: localhost
+  cloud:
+    config:
+      uri: http://localhost:8888
+#  data:
+#    mongodb:
+#      database: sunidhi
+#      port: 27017
+#      host: localhost
 
 
 eureka:         #tells about the Eureka server details and its refresh time
@@ -31,3 +34,8 @@ management:
 logging:
   level:
     com.example.howtodoinjava: DEBUG
+
+# this is the default
+
+
+
