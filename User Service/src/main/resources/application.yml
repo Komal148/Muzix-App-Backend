@@ -1,5 +1,5 @@
 #server:
-#  port: 8082  #default port where the service will be started
+# port: ${PORT:8082}  #default port where the service will be started
 
 spring:
   application:
