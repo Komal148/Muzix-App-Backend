@@ -20,7 +20,9 @@ public class User {
     int id;
     String firstName;
     String lastName;
+    String userName;
     int age;
+
 
 
     public User(){
@@ -66,7 +68,6 @@ public class User {
         this.userName = userName;
     }
 
-    String userName;
 
 
     @Override

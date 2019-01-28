@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: userService
+  data:
+    mongodb:
+      database: sunidhi
+      port: 27017
+      host: localhost
