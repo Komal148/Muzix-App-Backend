@@ -1,4 +1,4 @@
-package com.stackroute.springbootzuulgatewayproxy.filters;
+package com.stackroute.zuulfilters;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.exception.ZuulException;
@@ -6,17 +6,17 @@ import com.netflix.zuul.exception.ZuulException;
 public class PostFilter extends ZuulFilter {
     @Override
     public String filterType() {
-        return null;
+        return "post";
     }
 
     @Override
     public int filterOrder() {
-        return 0;
+        return 1;
     }
 
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     @Override

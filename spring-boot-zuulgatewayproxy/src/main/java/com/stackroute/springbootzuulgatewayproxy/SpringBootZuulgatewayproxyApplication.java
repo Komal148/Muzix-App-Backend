@@ -1,9 +1,9 @@
 package com.stackroute.springbootzuulgatewayproxy;
 
-import com.stackroute.springbootzuulgatewayproxy.filters.ErrorFilter;
-import com.stackroute.springbootzuulgatewayproxy.filters.PostFilter;
-import com.stackroute.springbootzuulgatewayproxy.filters.PreFilter;
-import com.stackroute.springbootzuulgatewayproxy.filters.RouteFilter;
+import com.stackroute.zuulfilters.ErrorFilter;
+import com.stackroute.zuulfilters.PostFilter;
+import com.stackroute.zuulfilters.PreFilter;
+import com.stackroute.zuulfilters.RouteFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -20,8 +20,7 @@ public class SpringBootZuulgatewayproxyApplication {
 
 	@Bean
 	public PreFilter preFilter() {
-		return new PreFilter();
-	}
+		return new PreFilter(); }
 	@Bean
 	public PostFilter postFilter() {
 		return new PostFilter();
