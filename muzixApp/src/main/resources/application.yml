@@ -1,12 +1,13 @@
-server:
-  port: ${PORT:8083}  #default port where the service will be started
+#server:
+#  port: ${PORT:8083}  #default port where the service will be started
 
 spring:
   application:
     name: TrackService
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://localhost:8888/
+
 
   profiles:
      active:
