@@ -1,16 +1,16 @@
-#server:
-# port: ${PORT:8082}  #default port where the service will be started
+server:
+ port: ${PORT:8082}  #default port where the service will be started
 
 spring:
   application:
     name: user-service
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://localhost:${config.port:8888}
 
   profiles:
-      active:
-        development: userService
+      active: development
+
 #  data:
 #    mongodb:
 #      database: sunidhi
