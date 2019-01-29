@@ -9,10 +9,6 @@ spring:
       server:
         git:
           uri: https://github.com/Komal148/config-server-repo
-#          repos:
-#            search-paths:
-#              - 'track*'
-#              - 'user*'
   application:
     name: config-server
 
